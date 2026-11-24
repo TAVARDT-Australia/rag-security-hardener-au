@@ -10,7 +10,7 @@
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KDF4PP5Q');</script>
+  })(window,document,'script','dataLayer','GTM-5KNBXRZP');</script>
   
 
   <meta charset="UTF-8">
@@ -27,7 +27,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TAVARDT Australia">
   <meta property="og:title" content="RAG Security &amp; Context Hardening Hub | TAVARDT">
-  <meta property="og:description" content="Especificações técnicas corporativas e blueprints de proteção contra Prompt Injection, exfiltração de dados e envenenamento em pipelines RAG.">
+  <meta property="og:description" content="Enterprise technical specifications and defensive blueprints against Prompt Injection, data exfiltration, and context poisoning in RAG pipelines.">
   <meta property="og:url" content="https://tavardt-australia.github.io/rag-security-hardener-au/">
   <meta property="og:image" content="https://tavardt-australia.github.io/rag-security-hardener-au/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -37,8 +37,8 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@tavardt">
-  <meta name="twitter:title" content="Hub de Hardening RAG &amp; Segurança de IA | TAVARDT Australia">
-  <meta name="twitter:description" content="Mitigação de vulnerabilidades em bancos vetoriais e pipelines RAG com blueprints de arquitetura e CLI determinístico.">
+  <meta name="twitter:title" content="RAG Hardening Hub &amp; AI Security | TAVARDT Australia">
+  <meta name="twitter:description" content="Mitigating vector database and RAG pipeline vulnerabilities with defensive architecture blueprints and deterministic CLI tooling.">
   <meta name="twitter:image" content="https://tavardt-australia.github.io/rag-security-hardener-au/og-image.jpg">
 
   <script type="application/ld+json">
@@ -53,7 +53,7 @@
         "applicationCategory": "SecurityApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Requires HTML5.",
-        "description": "Central corporativa de diretrizes de mitigação contra Indirect Prompt Injection, controle de acesso em bancos vetoriais (ACL) e ferramenta CLI determinística de auditoria.",
+        "description": "Corporate defensive guidelines against Indirect Prompt Injection, vector database access controls (ACL), and deterministic CLI audit utility.",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -88,7 +88,7 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Segurança de Pipelines RAG",
+            "name": "RAG Pipeline Security",
             "item": "https://tavardt-australia.github.io/rag-security-hardener-au/"
           }
         ]
@@ -96,9 +96,9 @@
       {
         "@type": "TechArticle",
         "@id": "https://tavardt-australia.github.io/rag-security-hardener-au/#article",
-        "headline": "Especificação Técnica de Hardening de Pipelines RAG e Bancos Vetoriais",
-        "description": "Análise aprofundada de vetores de injeção indireta em busca semântica, isolamento com delimitadores XML e controle por metadados para desenvolvedores de IA.",
-        "articleSection": "Segurança de IA & Pipelines RAG",
+        "headline": "Technical Hardening Specification for RAG Pipelines & Vector Databases",
+        "description": "In-depth analysis of indirect injection vectors in semantic search, context isolation via structural delimiters, and metadata controls for AI developers.",
+        "articleSection": "AI Security & RAG Pipelines",
         "inLanguage": "en-AU",
         "publisher": {
           "@type": "Organization",
@@ -112,42 +112,42 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Por que a validação de segurança de pipelines RAG não deve conectar bancos vetoriais pelo navegador?",
+            "name": "Why RAG pipeline security validation must not connect directly to vector databases via browser?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Bancos vetoriais de produção contêm credenciais de API críticas e dados confidenciais protegidos por VPC e firewalls. Conectar instâncias vetoriais diretamente pelo navegador exporia credenciais e violaria o princípio de menor privilégio. Por isso, a TAVARDT fornece blueprints arquiteturais e ferramentas CLI para auditoria local e segura."
+              "text": "Production vector databases store critical API credentials and confidential data protected by private VPCs and firewalls. Direct browser-based connections would expose credentials and violate least privilege principles. For this reason, TAVARDT provides architectural blueprints and deterministic CLI tools for secure local auditing."
             }
           },
           {
             "@type": "Question",
-            "name": "O que é Indirect Prompt Injection e como ele compromete arquiteturas RAG?",
+            "name": "What is Indirect Prompt Injection and how does it compromise RAG architectures?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "O Indirect Prompt Injection ocorre quando documentos externos indexados no banco vetorial contêm instruções maliciosas ocultas. Quando o pipeline RAG recupera esses fragmentos e os concatena no prompt do LLM, o modelo pode desviar de suas instruções originais, executando comandos indevidos ou exfiltrando dados sensíveis."
+              "text": "Indirect Prompt Injection occurs when untrusted external documents indexed in vector databases contain hidden malicious instructions. When the RAG pipeline retrieves these chunks and concatenates them into the LLM prompt, the model can deviate from original instructions, executing unintended directives or exfiltrating sensitive context."
             }
           },
           {
             "@type": "Question",
-            "name": "Como o isolamento de contexto com delimitadores estruturados mitiga injeções indiretas?",
+            "name": "How does context isolation via structural delimiters mitigate indirect injections?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ao encapsular os dados recuperados em blocos delimitados (como tags XML &lt;context&gt;...&lt;/context&gt;) e instruir o modelo a tratar o conteúdo estritamente como dado passivo de referência, cria-se uma barreira semântica clara que impede o interpretador do LLM de tratar instruções de terceiros como comandos executáveis."
+              "text": "By encapsulating retrieved data within strict structural boundaries (such as XML &lt;context&gt;...&lt;/context&gt; tags) and instructing the model to treat the content strictly as inert reference data, a clear syntactic barrier is established that prevents the LLM from executing third-party instructions."
             }
           },
           {
             "@type": "Question",
-            "name": "Qual a importância do controle de acesso baseado em metadados (ACL/RBAC) em buscas vetoriais?",
+            "name": "Why is metadata-based access control (ACL/RBAC) critical in vector search?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Em ambientes corporativos, diferentes usuários possuem diferentes níveis de autorização. O controle por metadados assegura que a consulta vetorial aplique filtros obrigatórios de identidade e perfil antes da busca por similaridade, impedindo que um usuário recupere fragmentos confidenciais aos quais não tem direito de acesso."
+              "text": "In enterprise environments, users operate under varying authorization levels. Metadata-based access control guarantees that vector queries apply mandatory tenant and role filters before similarity ranking, preventing unprivileged users from retrieving confidential fragments."
             }
           },
           {
             "@type": "Question",
-            "name": "Quais práticas recomendadas devem ser adotadas no pipeline de ingestão de documentos?",
+            "name": "What best practices should be implemented in the document ingestion pipeline?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A esteira de ingestão deve realizar sanitização de texto, remoção de caracteres de controle invisíveis, verificação de integridade de fonte (source verification), chunking padronizado e detecção de padrões de injeção antes da geração e armazenamento dos embeddings no banco vetorial."
+              "text": "The ingestion pipeline must execute text sanitisation, strip invisible control characters, verify source authenticity, apply standardized chunking, and scan for prompt injection patterns prior to embedding generation and storage."
             }
           }
         ]
@@ -1002,7 +1002,7 @@
   </style>
 </head>
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDF4PP5Q"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KNBXRZP"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <header class="tavardt-header">
@@ -1012,28 +1012,28 @@
       </a>
       <nav class="tavardt-nav">
         <a class="tavardt-nav-link" href="https://ag.tavardt.com/au/" rel="noopener" target="_blank">Portal</a>
-        <a class="tavardt-nav-link" href="https://tools.tavardt.com/au/" rel="noopener" target="_blank">Ferramentas</a>
+        <a class="tavardt-nav-link" href="https://tools.tavardt.com/au/" rel="noopener" target="_blank">Tools</a>
       </nav>
     </div>
   </header>
 
   <main class="tavardt-main">
     <section class="hero-section">
-      <h1 class="hero-title">Defensive Architecture Hub &amp; Hardening de Segurança em Pipelines RAG</h1>
-      <p class="hero-subtitle">Especificação técnica corporativa de proteção contra Indirect Prompt Injection, exfiltração de embeddings, envenenamento de contexto vetorial, políticas de sanitização de chunks e ferramental CLI determinístico.</p>
+      <h1 class="hero-title">Defensive Architecture Hub &amp; RAG Pipeline Security Hardening</h1>
+      <p class="hero-subtitle">Enterprise defensive specification for Indirect Prompt Injection protection, embedding exfiltration mitigation, vector context poisoning controls, chunk sanitisation policies, and deterministic CLI tooling.</p>
     </section>
 
     <div class="cli-card">
       <div class="cli-header">
-        <span class="cli-title">Testes em terminal Local CLI</span>
-        <button class="btn-copy-cli" id="btn-copy-cli" onclick="copyCliCommand()" type="button" aria-label="Copiar comando">
+        <span class="cli-title">Local CLI Terminal Testing</span>
+        <button class="btn-copy-cli" id="btn-copy-cli" onclick="copyCliCommand()" type="button" aria-label="Copy Command">
           <span class="btn-copy-cli-text">Copy</span>
           <span class="btn-copy-cli-icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg></span>
         </button>
       </div>
       <div class="cli-body">
-        <p class="cli-desc">Para inspecionar seus prompts, esteiras de ingestão vetorial e configurações de segurança de pipelines RAG diretamente no seu ambiente corporativo, execute o utilitário oficial em Python:</p>
-        <div class="cli-code-terminal" id="cli-terminal-code"><span class="cli-comment"># 1. Obter o script de auditoria no repositório oficial</span>
+        <p class="cli-desc">To inspect your prompts, vector ingestion pipelines, and RAG security configurations directly in your host environment without exposing data to browser sandboxes, execute the official Python utility:</p>
+        <div class="cli-code-terminal" id="cli-terminal-code"><span class="cli-comment"># 1. Download audit script from official repository</span>
 curl -sO https://raw.githubusercontent.com/TAVARDT-Australia/rag-security-hardener-au/main/rag_security_auditor.py
 
 <span class="cli-comment"># 2. Run deterministic RAG pipeline security audit</span>
@@ -1041,30 +1041,30 @@ python rag_security_auditor.py</div>
         <div class="cli-features">
           <div class="cli-feature-tag"><strong>Deterministic Inspection</strong>Template and chunking validation</div>
           <div class="cli-feature-tag"><strong>Data Protection</strong>Metadata and ACL verification</div>
-          <div class="cli-feature-tag"><strong>Zero Simulação</strong>Regras OWASP LLM validadas</div>
+          <div class="cli-feature-tag"><strong>Zero Simulation</strong>Validated OWASP LLM security controls</div>
         </div>
       </div>
     </div>
 
     <section class="matrix-section">
-      <h2 class="section-title">Diagnóstico Arquitetural: Pipeline RAG Padrão vs. Blindado</h2>
-      <p class="section-subtitle">Selecione uma das posturas arquiteturais para compreender as vulnerabilidades semânticas ou as barreiras defensivas do pipeline:</p>
+      <h2 class="section-title">Architectural Diagnostics: Standard vs. Hardened RAG Pipeline</h2>
+      <p class="section-subtitle">Select an architectural posture to analyze semantic vulnerabilities or defence-in-depth security controls:</p>
 
       <div class="matrix-tabs">
-        <button class="matrix-tab-btn active vuln" id="tab-scenario-vuln" onclick="switchScenario('vuln')" type="button">1. Pipeline RAG Padrão (Vulnerável)</button>
-        <button class="matrix-tab-btn hard" id="tab-scenario-hard" onclick="switchScenario('hard')" type="button">2. Pipeline RAG Blindado (Padrão TAVARDT Zero Trust)</button>
+        <button class="matrix-tab-btn active vuln" id="tab-scenario-vuln" onclick="switchScenario('vuln')" type="button">1. Standard RAG Pipeline (Vulnerable)</button>
+        <button class="matrix-tab-btn hard" id="tab-scenario-hard" onclick="switchScenario('hard')" type="button">2. Hardened RAG Pipeline (TAVARDT Zero Trust Baseline)</button>
       </div>
 
       <div class="posture-display-card">
         <div class="posture-status-row">
-          <span class="posture-badge badge-vuln" id="posture-badge">POSTURA PADRÃO: VULNERÁVEL A RCE &amp; ROUBO DE SEGREDO CORPORATIVO</span>
-          <span class="posture-mode-tag" id="posture-mode-tag">Configuração Insegura Com Permissões Globais Excessivas</span>
+          <span class="posture-badge badge-vuln" id="posture-badge">STANDARD POSTURE: VULNERABLE TO PROMPT INJECTION &amp; EXFILTRATION</span>
+          <span class="posture-mode-tag" id="posture-mode-tag">Unsanitized Ingestion &amp; Unrestricted Context Exposure</span>
         </div>
-        <p class="posture-summary" id="posture-summary">Pipelines convencionais frequentemente utilizam permissões globais irrestritas (write-all), disparam jobs privilegiados através de pull_request_target com checkout de código externo e consomem actions de terceiros sem fixação estrita por commit SHA, viabilizando ataques diretos de Supply Chain.</p>
+        <p class="posture-summary" id="posture-summary">Conventional RAG pipelines concatenate raw external documents directly into system prompts without sanitisation, allowing indirect prompt injections to hijack LLM reasoning, bypass guardrails, and exfiltrate private database records.</p>
 
         <div class="routes-box">
           <div class="routes-header">
-            <span>Mapeamento de Vetores de Injeção &amp; Superfície RAG</span>
+            <span>Injection Vector Mapping &amp; RAG Surface Exposure</span>
           </div>
           <table class="routes-table">
             <thead>
@@ -1072,7 +1072,7 @@ python rag_security_auditor.py</div>
                 <th>VECTOR / ATTACK SURFACE</th>
                 <th>OBSERVED CONFIGURATION</th>
                 <th>COMPORTAMENTO DO PIPELINE</th>
-                <th>POSTURA DE SEGURANÇA</th>
+                <th>SECURITY POSTURE</th>
               </tr>
             </thead>
             <tbody id="routes-tbody">
@@ -1090,13 +1090,13 @@ python rag_security_auditor.py</div>
     </section>
 
     <section class="blueprints-section">
-      <h2 class="section-title">Blueprints de Mitigação &amp; Configurações de Servidor</h2>
-      <p class="section-subtitle">Selecione o arquivo de configuração para visualizar e copiar manifestos blindados prontos para aplicação imediata:</p>
+      <h2 class="section-title">Mitigation Blueprints &amp; Hardened Configurations</h2>
+      <p class="section-subtitle">Select a configuration blueprint to inspect and copy production-tested hardened manifests:</p>
 
       <div class="code-toolbar">
         <select class="code-select" id="code-select" onchange="switchCodeTab(this.value)">
           <option value="policy">rag-security-policy.yml (Corporate Policy)</option>
-          <option value="sanitizer">chunk-sanitizer.py (Sanitização de Chunks)</option>
+          <option value="sanitizer">chunk-sanitizer.py (Chunk Sanitisation)</option>
           <option value="acl">vector-acl-guard.py (Filtro de Metadados / ACL)</option>
           <option value="template">prompt-boundary-template.py (Isolamento XML)</option>
           <option value="cli">rag_security_auditor.py (Deterministic CLI)</option>
@@ -1108,71 +1108,71 @@ python rag_security_auditor.py</div>
     </section>
 
     <section class="aeo-section">
-      <span class="aeo-overline">PADRÃO DE SEGURANÇA DEFENSIVA PARA APLICAÇÕES RAG</span>
+      <span class="aeo-overline">DEFENSIVE SECURITY BASELINE FOR RAG APPLICATIONS</span>
       <h2 class="aeo-title">Como Proteger Pipelines RAG Corporativos contra Indirect Prompt Injection e Vazamentos?</h2>
       <div class="aeo-content">
-        <p>Pipelines RAG (Retrieval-Augmented Generation) revolucionaram o uso de modelos de linguagem ao permitir que bases de conhecimento proprietárias sejam consultadas sob demanda. Contudo, essa arquitetura amplia significativamente a superfície de ataque ao fundir instruções operacionais com dados recuperados de documentos externos não confiáveis.</p>
-        <p>A estratégia de imunização em profundidade desenvolvida pela TAVARDT adota três barreiras essenciais: (1) sanitização e normalização Unicode na esteira de ingestão de documentos, (2) aplicação mandatória de filtros de controle de acesso baseados em metadados (ACL/RBAC) no banco vetorial antes do cálculo de similaridade, e (3) encapsulamento rígido do contexto em blocos XML delimitados (&lt;context&gt;...&lt;/context&gt;) no template de prompt do LLM, acompanhado de guardrails de saída para conter exfiltrações.</p>
+        <p>Retrieval-Augmented Generation (RAG) architectures transformed enterprise language models by grounding answers on proprietary knowledge bases on demand. However, this architecture significantly expands the attack surface by merging system operational instructions with untrusted external document data.</p>
+        <p>The defence-in-depth framework established by TAVARDT enforces three essential boundaries: (1) Unicode normalisation and sanitisation during document ingestion, (2) mandatory metadata-based access control filters (ACL/RBAC) in the vector store before similarity search, and (3) strict context encapsulation using XML delimiters (&lt;context&gt;...&lt;/context&gt;) in the prompt template, paired with deterministic output guardrails to prevent exfiltration.</p>
       </div>
     </section>
 
     <section class="faq-section">
-      <h2 class="faq-title">Perguntas Frequentes sobre Segurança em Pipelines RAG e Bancos Vetoriais</h2>
+      <h2 class="faq-title">Frequently Asked Questions on RAG Security &amp; Vector Databases</h2>
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-btn" onclick="toggleFaq(this)" type="button">
-            <span>Por que a validação de segurança de pipelines RAG não deve conectar bancos vetoriais pelo navegador?</span>
+            <span>Why RAG pipeline security validation must not connect directly to vector databases via browser?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
-            Bancos vetoriais de produção contêm credenciais de API críticas e dados confidenciais protegidos por VPC e firewalls. Conectar instâncias vetoriais diretamente pelo navegador exporia credenciais e violaria o princípio de menor privilégio. Por isso, a TAVARDT fornece blueprints arquiteturais e ferramentas CLI para auditoria local e segura.
+            Production vector databases store critical API credentials and confidential data protected by private VPCs and firewalls. Direct browser-based connections would expose credentials and violate least privilege principles. For this reason, TAVARDT provides architectural blueprints and deterministic CLI tools for secure local auditing.
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-btn" onclick="toggleFaq(this)" type="button">
-            <span>O que é Indirect Prompt Injection e como ele compromete arquiteturas RAG?</span>
+            <span>What is Indirect Prompt Injection and how does it compromise RAG architectures?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
-            O Indirect Prompt Injection ocorre quando documentos externos indexados no banco vetorial contêm instruções maliciosas ocultas. Quando o pipeline RAG recupera esses fragmentos e os concatena no prompt do LLM, o modelo pode desviar de suas instruções originais, executando comandos indevidos ou exfiltrando dados sensíveis.
+            Indirect Prompt Injection occurs when untrusted external documents indexed in vector databases contain hidden malicious instructions. When the RAG pipeline retrieves these chunks and concatenates them into the LLM prompt, the model can deviate from its original instructions, executing unauthorized directives or exfiltrating sensitive data.
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-btn" onclick="toggleFaq(this)" type="button">
-            <span>Como o isolamento de contexto com delimitadores estruturados mitiga injeções indiretas?</span>
+            <span>How does context isolation via structural delimiters mitigate indirect injections?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
-            Ao encapsular os dados recuperados em blocos delimitados (como tags XML &lt;context&gt;...&lt;/context&gt;) e instruir o modelo a tratar o conteúdo estritamente como dado passivo de referência, cria-se uma barreira semântica clara que impede o interpretador do LLM de tratar instruções de terceiros como comandos executáveis.
+            By encapsulating retrieved data within strict structural boundaries (such as XML &lt;context&gt;...&lt;/context&gt; tags) and instructing the model to process the content strictly as inert reference data, a syntactic barrier is created that prevents the LLM from executing third-party instructions.
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-btn" onclick="toggleFaq(this)" type="button">
-            <span>Qual a importância do controle de acesso baseado em metadados (ACL/RBAC) em buscas vetoriais?</span>
+            <span>Why is metadata-based access control (ACL/RBAC) critical in vector search?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
-            Em ambientes corporativos, diferentes usuários possuem diferentes níveis de autorização. O controle por metadados assegura que a consulta vetorial aplique filtros obrigatórios de identidade e perfil antes da busca por similaridade, impedindo que um usuário recupere fragmentos confidenciais aos quais não tem direito de acesso.
+            In enterprise environments, users operate under varying authorization levels. Metadata-based access control guarantees that vector queries apply mandatory tenant and role filters before similarity ranking, preventing unprivileged users from retrieving confidential fragments.
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-btn" onclick="toggleFaq(this)" type="button">
-            <span>Quais práticas recomendadas devem ser adotadas no pipeline de ingestão de documentos?</span>
+            <span>What best practices should be implemented in the document ingestion pipeline?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
-            A esteira de ingestão deve realizar sanitização de texto, remoção de caracteres de controle invisíveis, verificação de integridade de fonte (source verification), chunking padronizado e detecção de padrões de injeção antes da geração e armazenamento dos embeddings no banco vetorial.
+            The ingestion pipeline must execute text sanitisation, strip invisible control characters, verify source authenticity, apply standardized chunking, and scan for prompt injection patterns prior to embedding generation and storage.
           </div>
         </div>
       </div>
     </section>
 
     <div class="cta-card">
-      <h3>Precisa de Blindagem Corporativa para Aplicações RAG e Bancos Vetoriais?</h3>
-      <p>A equipe de engenharia e IA da TAVARDT audita arquiteturas de busca semântica, implementa defesas contra Indirect Prompt Injection, configura isolamento de metadados vetoriais e estabelece guardrails de saída para seus modelos de linguagem em até 24 horas.</p>
+      <h3>Need Enterprise Hardening for RAG Pipelines &amp; Vector Databases?</h3>
+      <p>The TAVARDT AI and cybersecurity engineering team audits semantic retrieval architectures, implements defenses against Indirect Prompt Injection, configures vector metadata isolation, and deploys deterministic output guardrails within 24 hours.</p>
       <div class="cta-btns">
         <a class="btn-wa" href="https://wa.me/5584987721775?text=Ol%C3%A1%20Sofia%2C%20consultei%20o%20RAG%20Security%20Hardener%20da%20TAVARDT%20e%20gostaria%20de%20apoio%20t%C3%A9cnico%20para%20blindagem%20dos%20meus%20pipelines%20de%20IA." rel="noopener" target="_blank">Atendimento Direto com a Sofia (WhatsApp)</a>
-        <a class="btn-corp" href="https://ag.tavardt.com/au/ciberseguranca/" rel="noopener" target="_blank">Ver Serviços de Cibersegurança</a>
+        <a class="btn-corp" href="https://ag.tavardt.com/au/cybersecurity/" rel="noopener" target="_blank">Explore Cybersecurity Services</a>
       </div>
     </div>
   </main>
@@ -1181,19 +1181,19 @@ python rag_security_auditor.py</div>
     <div class="tavardt-footer-inner">
       <div class="tavardt-footer-col">
         <div class="tavardt-footer-logo">TAVARDT<span class="tavardt-brand-dot">.</span></div>
-        <p class="tavardt-footer-mission">Transformamos negócios invisíveis em marcas reconhecidas e seguras no mercado digital.</p>
+        <p class="tavardt-footer-mission">Transforming invisible operations into authoritative, resilient, and enterprise-grade secured platforms.</p>
       </div>
       <div class="tavardt-footer-col">
-        <div class="tavardt-footer-heading">Navegação Regional</div>
+        <div class="tavardt-footer-heading">Regional Navigation</div>
         <ul class="tavardt-footer-links">
           <li><a href="https://ag.tavardt.com/au/" rel="noopener" target="_blank">Portal</a></li>
-          <li><a href="https://tools.tavardt.com/au/" rel="noopener" target="_blank">Ferramentas</a></li>
+          <li><a href="https://tools.tavardt.com/au/" rel="noopener" target="_blank">Tools</a></li>
           <li><a href="https://ag.tavardt.com/au/contact/" rel="noopener" target="_blank">Contato</a></li>
         </ul>
       </div>
       <div class="tavardt-footer-col">
-        <div class="tavardt-footer-heading">Governança &amp; Conformidade</div>
-        <p class="tavardt-footer-compliance-text">Arquitetura defensiva e controles de cibersegurança em conformidade com as diretrizes CIS Benchmarks, OWASP Top 10 e padrões Zero Trust.</p>
+        <div class="tavardt-footer-heading">Governance &amp; Compliance</div>
+        <p class="tavardt-footer-compliance-text">Defensive architecture and cybersecurity controls aligned with ACSC Essential Eight, ASD ISM, and Australian Privacy Principles (APPs).</p>
       </div>
     </div>
     <div class="tavardt-footer-bottom">
@@ -1268,7 +1268,7 @@ class VectorACLGuard:
         user_roles = user_identity.get("roles", [])
         
         if not tenant_id:
-            raise PermissionError("Requisição vetorial sem identificador de tenant válido")
+            raise PermissionError("Vector query missing valid tenant identifier")
             
         # Filtro estrito de metadados aplicado na consulta vetorial
         query_filter = {
@@ -1308,7 +1308,7 @@ Pergunta do usuario: """ + str(user_query) + """
 Resposta:"""
     return prompt`,
 
-      cli: `# rag_security_auditor.py - TAVARDT Utilitário CLI Determinístico de Auditoria RAG
+      cli: `# rag_security_auditor.py - TAVARDT Deterministic RAG Security Audit CLI Utility
 import os
 import sys
 
@@ -1329,9 +1329,9 @@ def audit_rag_pipeline(config_path):
     for name, required in rules:
         if required:
             score += 1
-            print("[CONFORME] " + str(name))
+            print("[COMPLIANT] " + str(name))
         else:
-            print("[ALERTA] " + str(name) + " requer atencao")
+            print("[ALERT] " + str(name) + " requires attention")
             
     print("." * 60)
     pct = int((score / len(rules)) * 100)
@@ -1345,42 +1345,42 @@ if __name__ == "__main__":
     const scenariosData = {
       vuln: {
         badgeClass: 'badge-vuln',
-        badgeText: 'POSTURA PADRÃO: VULNERÁVEL A PROMPT INJECTION & EXFILTRAÇÃO',
+        badgeText: 'STANDARD POSTURE: VULNERABLE TO PROMPT INJECTION & EXFILTRATION',
         modeTag: 'Unsanitized Context &amp; Vector Database Without Metadata Filters',
-        summary: 'Pipelines RAG convencionais concatenam documentos externos brutos diretamente no prompt do LLM sem delimitadores estruturados e realizam buscas por similaridade sem validar permissões de usuário (ACL), permitindo injeções indiretas e vazamento de dados corporativos.',
+        summary: 'Conventional RAG pipelines concatenate raw external documents directly into system prompts without structured delimiters and perform similarity searches without metadata access control (ACL), enabling indirect injections and enterprise data leakage.',
         findingsCount: '4 Active Vulnerabilities',
         findingsCountColor: '#ef4444',
         routes: [
-          { path: 'Concatenação direta de documentos no prompt', status: 'Injeção Indireta', exposure: 'Documentos recuperados assumem o controle da conversa', risk: 'CRÍTICO', tagClass: 'crit' },
-          { path: 'Busca vetorial sem filtros de metadados (ACL)', status: 'Acesso Excessivo', exposure: 'Usuários comuns recuperam fragmentos confidenciais', risk: 'ALTO', tagClass: 'high' },
-          { path: 'Ingestão de dados brutos sem sanitização', status: 'Envenenamento', exposure: 'Payloads maliciosos indexados no banco vetorial', risk: 'ALTO', tagClass: 'high' },
-          { path: 'Saída do LLM sem validação de conformidade', status: 'Sem Guardrail', exposure: 'Respostas do modelo vazam instruções e segredos', risk: 'ALTO', tagClass: 'high' }
+          { path: 'Direct concatenation of raw chunks in prompt', status: 'Indirect Injection', exposure: 'Retrieved untrusted chunks hijack model control flow', risk: 'CRITICAL', tagClass: 'crit' },
+          { path: 'Vector search without metadata ACL filtering', status: 'Excessive Access', exposure: 'Unprivileged queries retrieve restricted context fragments', risk: 'HIGH', tagClass: 'high' },
+          { path: 'Raw document ingestion without sanitisation', status: 'Data Poisoning', exposure: 'Adversarial payloads indexed into production vector store', risk: 'HIGH', tagClass: 'high' },
+          { path: 'LLM output returned without guardrail inspection', status: 'No Guardrails', exposure: 'Model responses leak internal context or system secrets', risk: 'HIGH', tagClass: 'high' }
         ],
         findings: [
           { text: 'Fragmentos recuperados inseridos sem tags de isolamento de contexto no prompt (Indirect Prompt Injection).', type: 'warn' },
-          { text: 'Banco vetorial consultado sem cláusulas de controle de acesso por perfil (RBAC / Tenancy).', type: 'warn' },
-          { text: 'Ausência de verificação de instruções executáveis e sanitização NFKC nos chunks armazenados.', type: 'warn' },
-          { text: 'Ausência de guardrail determinístico inspecionando e sanitizando a resposta final do LLM.', type: 'warn' }
+          { text: 'Vector store queried without multi-tenant metadata access control filters (RBAC).', type: 'warn' },
+          { text: 'Absence of executable instruction scanning or NFKC normalisation on stored chunks.', type: 'warn' },
+          { text: 'Absence of deterministic guardrails inspecting and filtering final model responses.', type: 'warn' }
         ]
       },
       hard: {
         badgeClass: 'badge-hard',
-        badgeText: 'POSTURA BLINDADA: TAVARDT ZERO TRUST & DEFESA EM PROFUNDIDADE',
-        modeTag: 'Delimitação Estrita de Contexto, Filtros de Metadados e Guardrails Ativos',
-        summary: 'O pipeline RAG blindado sanitiza todo texto antes da ingestão, impõe filtros obrigatórios de controle de acesso (ACL) nas buscas vetoriais, isola fragmentos em delimitadores XML estritos e valida as respostas do modelo com guardrails determinísticos.',
+        badgeText: 'HARDENED POSTURE: TAVARDT ZERO TRUST & DEFENCE-IN-DEPTH',
+        modeTag: 'Strict Context Isolation, Metadata Filters & Active Output Guardrails',
+        summary: 'The hardened RAG pipeline normalises and sanitises text during ingestion, enforces mandatory tenant metadata filters (ACL) in vector search, isolates chunks within strict XML delimiters, and validates model output with deterministic guardrails.',
         findingsCount: '0 Vulnerabilidades (Totalmente Blindado)',
         findingsCountColor: '#10b981',
         routes: [
-          { path: 'Delimitação XML estruturada (<context>...</context>)', status: 'Isolado', exposure: 'LLM instruído a tratar fragmentos como dado passivo', risk: 'BLINDADO', tagClass: 'safe' },
-          { path: 'Filtro de metadados obrigatório por perfil (RBAC)', status: 'Mínimo Privilégio', exposure: 'Apenas dados autorizados para o usuário são retornados', risk: 'SEGURO', tagClass: 'safe' },
-          { path: 'Sanitização na ingestão e remoção de injeções', status: 'Higienizado', exposure: 'Documentos maliciosos neutralizados antes do embedding', risk: 'CONFORME', tagClass: 'safe' },
-          { path: 'Guardrails de saída para validação de resposta', status: 'Defesa Ativa', exposure: 'Bloqueio imediato de vazamentos de credenciais no output', risk: 'BLINDADO', tagClass: 'safe' }
+          { path: 'Structured XML boundary tags (<context>...</context>)', status: 'Isolated', exposure: 'LLM instructed to treat chunks strictly as inert data', risk: 'HARDENED', tagClass: 'safe' },
+          { path: 'Mandatory role metadata filtering (RBAC)', status: 'Least Privilege', exposure: 'Queries strictly restricted to tenant-authorized document embeddings', risk: 'SECURE', tagClass: 'safe' },
+          { path: 'Ingestion sanitisation & injection striping', status: 'Sanitised', exposure: 'Adversarial chunks neutralized prior to embedding generation', risk: 'COMPLIANT', tagClass: 'safe' },
+          { path: 'Deterministic output response guardrails', status: 'Active Defense', exposure: 'Immediate prevention of sensitive context leakage in output', risk: 'HARDENED', tagClass: 'safe' }
         ],
         findings: [
-          { text: 'Isolamento estrutural com tags XML estritas forçando o LLM a tratar fragmentos como dado passivo.', type: 'ok' },
-          { text: 'Filtro obrigatório de metadados por perfil (RBAC) garantindo acesso estritamente autorizado.', type: 'ok' },
-          { text: 'Esteira de ingestão com normalização NFKC, remoção de caracteres de controle e sanitização ativa.', type: 'ok' },
-          { text: 'Guardrails determinísticos de saída validando as respostas do modelo antes da entrega ao usuário.', type: 'ok' }
+          { text: 'Structural isolation with strict XML tags enforcing the LLM to treat chunks as passive data.', type: 'ok' },
+          { text: 'Mandatory role-based metadata filtering (RBAC) guaranteeing strictly authorized retrieval.', type: 'ok' },
+          { text: 'Ingestion pipeline with NFKC normalisation, invisible character purging, and active sanitisation.', type: 'ok' },
+          { text: 'Deterministic output guardrails validating model responses prior to delivery to client.', type: 'ok' }
         ]
       }
     };
@@ -1421,7 +1421,7 @@ if __name__ == "__main__":
       data.findings.forEach(f => {
         const item = document.createElement('div');
         item.className = 'finding-item ' + f.type;
-        item.innerText = (f.type === 'ok' ? '[CONFORME] ' : '[ALERTA CRÍTICO] ') + f.text;
+        item.innerText = (f.type === 'ok' ? '[COMPLIANT] ' : '[CRITICAL ALERT] ') + f.text;
         fList.appendChild(item);
       });
     }
