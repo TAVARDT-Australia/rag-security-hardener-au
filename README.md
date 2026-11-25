@@ -14,9 +14,6 @@ You can inspect the technical defensive specifications, architectural diagnostic
 
 * **[Official Web Application on GitHub Pages](https://tavardt-australia.github.io/rag-security-hardener-au/)**
 
-> [!NOTE]
-> **Technical Execution Scope:** This web hub provides defensive architecture specifications and hardening configuration blueprints. Active vector database audits and host pipeline scans require environment credentials and network connectivity via the provided deterministic Python CLI tool (`rag_security_auditor.py`). Web pages running in browser sandboxes cannot connect directly to private vector clusters.
-
 ***
 
 ## Hardening Blueprints Included
